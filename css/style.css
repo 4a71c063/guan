@@ -1,0 +1,124 @@
+* {
+    /* 字型 */
+    font-family: 微軟正黑體;
+    /* 靠邊靠邊 */
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /* 與頂端的距離 */
+    padding-top: 40px;
+    /* 可以滑到下面 */
+    height: 3000px;
+}
+
+.navbar {
+    /* 寬 */
+    width: 100%;
+    /* 高 */
+    height: 40px;
+    background-color: teal;
+    color: white;
+    /* 屬性 */
+    position: fixed;
+    /* 內文與邊框距離 */
+    padding: 10px;
+    /* 最靠上面 */
+    top: 0;
+    /* 最上層 */
+    z-index: 990;
+    /* 顯示 */
+    display: flex;
+    /* 尺寸會內縮 */
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    /* flex */
+    align-items: center;
+}
+
+.logo-name {
+    /* 與ICON距離 */
+    margin-left: 10px;
+    /* 字大小 */
+    font-size: 15px;
+}
+
+.aside1 {
+    background-color: rgb(99, 190, 190);
+    color: white;
+}
+
+aside {
+    /* 屬性 */
+    position: fixed;
+    top: 40px;
+    height: 100%;
+    width: 200px;
+    /* 陰影 */
+    box-shadow: 2px 0px 5px rgb(0, 0, 0, 0.5);
+    background-color: rgb(241, 255, 255);
+    padding-left: 400px 400px;
+
+}
+
+main {
+    background-image: url('https://images.photowall.com/products/64882/tender-clouds-with-yellow-swallows-soft-blue.jpg?h=699&q=85');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    padding-left: 200px;
+    font-size: 20px;
+    color: teal;
+}
+
+li {
+    /* 跟hover的5px長度一樣;ransparent 透明線 */
+    border-bottom: 5px solid transparent;
+    /* 列表距離 */
+    padding: 10px;
+}
+
+li:hover {
+    /* 底線在左邊 */
+    border-left: 6px solid white;
+    transition: all 0.8s ease;
+    background-color: rgb(49, 161, 189);
+    color: rgb(255, 255, 255);
+    /* 轉場 transition 轉場: 屬性 轉換時間 延遲執行時間 速度 */
+    transition: all 0.2s 0s ease-out;
+    border-bottom: 5px solid white;
+}
+
+li:active {
+    /* 按下去的背景顏色 */
+    background-color: gray;
+    /* 按下去的文字顏色 */
+    color: white;
+    /* 按下去的動 */
+    transition: all 0.2s ease;
+}
+
+a {
+    /* 不要有文字底線 */
+    text-decoration: none;
+    /* 超連結文字 */
+    color: teal;
+    /* 文字大小 */
+    font-size: 10px;
+    /* 超連接字置中 */
+    text-align: left;
+}
